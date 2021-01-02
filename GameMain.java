@@ -1,5 +1,11 @@
 
+/**
+ * ------- Find Computer Words Game ------------ by Raminta Kairyte x01416242
+ * 
+ * -----
+ * */
 
+ 
 public class GameMain {
 
     //this is the Main class. It calls the Controller ClassnewGame.letsPlay();

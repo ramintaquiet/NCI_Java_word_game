@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * ------- Find Computer Words Game ------------ by Raminta Kairyte x01416242
+ * 
+ * -----
+ * */
+
 public class GameController {
 
   // the main action of the programm is here
@@ -8,7 +14,7 @@ public class GameController {
 
   GamePlayer Player1 = new GamePlayer();
   GamePlayer Player2 = new GamePlayer();
-  Validate wordValidation = new Validate();
+  GamePointsValidation wordValidation = new GamePointsValidation();
   ValidWords myValidWords = new ValidWords();
   GamePoints playerPoints = new GamePoints();
 
@@ -80,7 +86,7 @@ public class GameController {
       
         System.out.println("enter a word: ");
         enteredWord = scn.next().toLowerCase();
-        warning();
+      
         
       
 
@@ -94,11 +100,12 @@ public class GameController {
 
         System.out.println("POINTS INFO:");
 
-        playerPoints.pointsInfo(match, isItValid);
+        //playerPoints.pointsInfo(match, isItValid);
+pointsInfo();
 
         System.out.println("===============================");
 
-        givingScore();
+       // givingScore();
         System.out.println("===============================");
 
         counter++;
@@ -114,6 +121,7 @@ public class GameController {
 
     }
 
+    // IDETI VALIDARIONS!!!!
     while (answer.equals("yes"));
 
   }
@@ -163,13 +171,13 @@ public class GameController {
         || enteredWord.charAt(0) == ('o') || enteredWord.charAt(0) == ('e') || enteredWord.charAt(0) == ('u')))
 
     {
-      p1score = p1score + 1;
+      p1score = p1score + 3;
 
     } else if (currentPlayer.equals(Player1.getName())
         && (enteredWord.charAt(0) != ('i') || enteredWord.charAt(0) != ('a') || enteredWord.charAt(0) != ('o')
             || enteredWord.charAt(0) != ('e') || enteredWord.charAt(0) != ('u'))) {
 
-      p1score = p1score + 3;
+      p1score = p1score + 1;
 
     } else if (currentPlayer.equals(Player2.getName())
         && (enteredWord.charAt(0) == ('i') || enteredWord.charAt(0) == ('a') || enteredWord.charAt(0) == ('o')
@@ -177,13 +185,35 @@ public class GameController {
 
     {
 
-      p2score = p2score + 1;
+      p2score = p2score + 3;
 
     } else {
-      p2score = p2score + 3;
+      p2score = p2score + 1;
     }
 
-    displayScore();
+    
+
+  }
+
+
+
+  
+  public void pointsInfo() {
+
+    System.out.println("============Points ========== ");
+
+    if (match == true && isItValid == true) {
+
+      System.out.println("Validation approved. You will get points  ");
+      givingScore();
+      displayScore();
+   
+    } else {
+
+      System.out.println("Validation not apptoved. No points for you ");
+      displayScore();
+    }
+
 
   }
 
@@ -212,13 +242,7 @@ public class GameController {
 
   }
 
-  public void warning() {
 
-    if(enteredWord.equalsIgnoreCase(enteredWord))
-    {
-      System.out.println("This is the same word!");
-    }
-  }
 
 
 
