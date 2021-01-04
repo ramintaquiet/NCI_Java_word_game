@@ -1,7 +1,7 @@
 /**
  * ------- Find Computer Words Game ------------ by Raminta Kairyte x01416242
  * 
- * ----
+ * 
  * 
  * This class contains 100 computer related words. Only those words are valid
  * for the game. These validity of those word are checked in the GameController

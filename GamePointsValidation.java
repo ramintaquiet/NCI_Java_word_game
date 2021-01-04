@@ -37,6 +37,7 @@ public class GamePointsValidation {
      * randomStringLeters characters.
      * 
      */
+
     public boolean checkWordLetters(String randomStringLetters, String wordToCheck) {
 
         // printing the statement of the Validation rule
@@ -78,7 +79,7 @@ public class GamePointsValidation {
              */
             if (randomStringLetters.indexOf(wordToCheck.charAt(i)) == -1) {
                 System.out.println("No"); // prints statememt "No" meaning the letters did not match.
-                System.out.println("-------------------");
+                System.out.println(" ");
                 return false; // return outcome of the boolean
 
             }
@@ -91,7 +92,7 @@ public class GamePointsValidation {
          */
         System.out.println("Yes");
 
-        System.out.println("-------------------");
+        System.out.println(" ");
 
         return true; // return outcome of the boolean.
 
@@ -104,7 +105,7 @@ public class GamePointsValidation {
      */
 
     /**
-     * This rule checks if the entered word belongs to the Approved Computer word
+     * This method checks if the entered word belongs to the Approved Computer word
      * vocabulary. This method is boolean type, that means it returns either true or
      * false. It takes two String type parameters:
      * 
@@ -155,13 +156,13 @@ public class GamePointsValidation {
 
             if (localWord.equals(checkingWord)) {
                 System.out.println("Yes"); // statement outcome to be printed
-                System.out.println("-------------------");
+                System.out.println(" ");
                 return true; // boolean statement TRUE
             }
 
         }
         System.out.println("No"); // statement outcome to be printed
-        System.out.println("-------------------");
+        System.out.println(" ");
         return false; // boolean statement FALSE
 
     }

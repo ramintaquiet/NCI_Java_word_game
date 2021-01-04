@@ -3,7 +3,6 @@ public class GameRules {
 /**
  * ------- Find Computer Words Game ------------ by Raminta Kairyte x01416242
  * 
- * -----
  * */
 
  // This is a default constructor. It doesnt take any parameters. 
@@ -16,11 +15,12 @@ GameRules() {}
  */
 public void displayRules() {
 
-    System.out.println("------------------ ");
-    System.out.println(" ---- WELCOME ---- ");
-    System.out.println("------------------ ");
+    System.out.println("  ");
+    System.out.println("  ");
+    System.out.println(" ---------- WELCOME ---------- ");
+    System.out.println(" ");
     System.out.println("---FIND COMPUTER WORDS GAME--- ");
-    System.out.println("--------RULES:---------- ");
+    System.out.println("--------RULES:-------- ");
     System.out.println("  1. There are two players in the game. Each player needs to create a computer related word from the given letters. ");
     System.out.println("  2. Before each round the player are given 12 random letters. The word needs to be created only those letters. ");
     System.out.println("  3. The Points are given only of the entered word passes two validation rules ");
@@ -29,9 +29,9 @@ public void displayRules() {
     System.out.println("  6. The points are give according to the Rule NR RP4: Begins with a vowel: 3 poits; begins with a consonant: 1 point.");
     System.out.println("  7. After each round, the  Game is askig the players if they want to play another round or finish the game. "); 
     System.out.println("  8. The winner of the game becomes the one who collects the most points. The winner is announced when the game is ended."); 
-    System.out.println("------------------ "); 
+    System.out.println("  "); 
     System.out.println("----GOOD--LUCK--- ");
-    System.out.println("------------------ "); 
+    System.out.println(" "); 
     
 
 }

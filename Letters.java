@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * ------- Find Computer Words Game ------------ by Raminta Kairyte x01416242
  * 
- * -----
+ * 
  * 
  * The name of the class. It is called Letters as this class provides Alphabeth
  * letters and has a method that generates random 12 letters for the player to
